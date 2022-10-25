@@ -15,6 +15,7 @@
             -->
             <TextBlock Text="{Binding TextYourFaction, FallbackValue='Your Faction'}" VerticalAlignment="Center" Margin="5,0" />
             <ComboBox Margin="5,0" ItemsSource="{Binding FactionOptions}" SelectedValue="{Binding SelectedFaction}" SelectedValuePath="Value" DisplayMemberPath="Display" />
+            <TextBlock Text="ALPHA BUILD 0.1 (no api support)" VerticalAlignment="Center" Foreground="red" />
         </StackPanel>
 
         <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Right">

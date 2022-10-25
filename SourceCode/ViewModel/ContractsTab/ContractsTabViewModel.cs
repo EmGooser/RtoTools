@@ -23,6 +23,8 @@ namespace RtoTools.ViewModel.ContractsTab
 
             AppController.Instance.RtoServerDataChanged += SingleRtoServerDataChanged;
             AppController.Instance.SelectedFactionChanged += SingleRtoServerDataChanged;
+
+            IsContractBuilderExpanded = true;
         }
 
         private void SingleRtoServerDataChanged()

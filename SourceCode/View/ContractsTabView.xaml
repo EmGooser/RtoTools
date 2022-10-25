@@ -10,8 +10,8 @@
              Background="White">
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
         <StackPanel>
-            <TextBlock Text="{Binding TextDeniableAssetWarning, FallbackValue='Deniable Asset Contracts will never be shown' }" Margin="5" />
-            <contactstab:CurrentContractsView />
+            <!-- TextBlock Text="{Binding TextDeniableAssetWarning, FallbackValue='Deniable Asset Contracts will never be shown' }" Margin="5" / -->
+            <!-- contactstab:CurrentContractsView /-->
             <contactstab:ContractBuilderView />
         </StackPanel>
     </ScrollViewer>

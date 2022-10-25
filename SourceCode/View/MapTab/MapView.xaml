@@ -26,7 +26,7 @@
                           Fill="{Binding SelectionOwnershipColor, Converter={StaticResource ColorToSolidBrush}, FallbackValue='Red'}" />
                 </Grid>
             </Canvas>
-            <Grid x:Name="uxMoveArrow" Canvas.Top="20" Canvas.Left="20" Width="18">
+            <Grid x:Name="uxMoveArrow" Canvas.Top="20" Canvas.Left="20" Width="18" Visibility="Collapsed">
                 <Grid.RenderTransform>
                     <RotateTransform x:Name="uxMoveArrowRotate" CenterX="9" />
                 </Grid.RenderTransform>

@@ -172,16 +172,16 @@ namespace RtoTools.ViewModel.ContractsTab
                     switch (SelectedContractType)
                     {
                         case ContractType.Attack:
-                            SetInfoForAttack();
+                            //SetInfoForAttack();
                             SetErrorsForAttack();
                             break;
                         case ContractType.Fortify:
-                            SetInfoForFority();
+                            //SetInfoForFority();
                             SetErrorsForFority();
                             break;
                         case ContractType.DeniableAsset:
                         case ContractType.FalseFlag:
-                            SetInfoForFalseFlag();
+                            //SetInfoForFalseFlag();
                             SetErrorsForFalseFlag();
                             break;
                     }
