@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="RtoTools.View.ContractsTabView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RtoTools.View" 
+             xmlns:contactstab="clr-namespace:RtoTools.View.ContactsTab"
+             mc:Ignorable="d" 
+             d:DesignWidth="800"
+             Background="White">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <StackPanel>
+            <TextBlock Text="{Binding TextDeniableAssetWarning, FallbackValue='Deniable Asset Contracts will never be shown' }" Margin="5" />
+            <contactstab:CurrentContractsView />
+            <contactstab:ContractBuilderView />
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

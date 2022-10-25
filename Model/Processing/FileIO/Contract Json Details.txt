@@ -1,0 +1,44 @@
+﻿/* 
+ * Info from the RTO discord to define the final output of the json that will be posted to discord
+ * 
+ 
+Precentor Rho/Rho III Jamie Wolf — 07/20/2022
+ccontract can now post multiple contracts at once this is done by attaching a json file to the command
+json format:
+{
+    "version": 1,
+    "contracts": [
+        {
+            "asFaction": "",
+            "contractId": "SomeName",
+            "contractType": "Attack",
+            "starSystem": "SomeSystem",
+            "targetControl": 0,
+            "targetFaction": "GhostBearDominion"
+        },
+        {
+            "asFaction": "",
+            "contractId": "SomeOtherName",
+            "contractType": "Fortify",
+            "starSystem": "SomeOtherSystem",
+            "targetControl": 175,
+            "targetFaction": ""
+        }
+    ]
+}
+contracts field can accept anywhere from 1 - 20 entries
+fields as follows
+
+asFaction: the faction to impersonate, only for contract types that allow you to impersonate another faction 
+
+contractId: some name to identify the contract, this is only used to report back to you if that contract was successfully opened
+
+contractType: the type of contract to open, valid values: Attack, Fortify, DeniableAsset, FalseFlag
+
+starSystem: the star system to open the contract on, must be the exact name
+
+targetControl: the target level of control required, valid range of 1 - 300, only used for Fortify contract types
+
+targetFaction: the faction being targeted (opFor) of the contract, used by Attack,  DeniableAsset, FalseFlag contract types
+
+to get faction names, use the !lfactions command 

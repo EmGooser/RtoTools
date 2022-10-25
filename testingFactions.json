@@ -1,0 +1,416 @@
+{
+  "AuriganDirectorate": {
+    "capital": "Coromodir",
+    "colour": "#003300",
+    "id": 49,
+    "prettyName": "Aurigan Directorate"
+  },
+  "AuriganPirates": {
+    "capital": "",
+    "colour": "#FFFFFF",
+    "id": 52,
+    "prettyName": "Pirates"
+  },
+  "AuriganRestoration": {
+    "capital": "Coromodir",
+    "colour": "#663333",
+    "id": 50,
+    "prettyName": "Aurigan Coalition"
+  },
+  "Axumite": {
+    "capital": "Thala",
+    "colour": "#FF6699",
+    "id": 39,
+    "prettyName": "Axumite Providence"
+  },
+  "CalderonProtectorate": {
+    "capital": "Erod\u0027s Escape",
+    "colour": "#AC7355",
+    "id": 65,
+    "prettyName": "Calderon Protectorate"
+  },
+  "Castile": {
+    "capital": "Asturias",
+    "colour": "#669966",
+    "id": 18,
+    "prettyName": "Nueva Castile"
+  },
+  "Chainelane": {
+    "capital": "Far Reach",
+    "colour": "#33CC99",
+    "id": 26,
+    "prettyName": "Chainelane Isles"
+  },
+  "Circinus": {
+    "capital": "Circinus",
+    "colour": "#663366",
+    "id": 28,
+    "prettyName": "Circinus Federation"
+  },
+  "ClanBloodSpirit": {
+    "capital": "Colleen",
+    "colour": "#990033",
+    "id": 51,
+    "prettyName": "Clan Blood Spirit"
+  },
+  "ClanBurrock": {
+    "capital": "",
+    "colour": "#CC6600",
+    "id": 9,
+    "prettyName": "Clan Burrock"
+  },
+  "ClanCloudCobra": {
+    "capital": "Roche",
+    "colour": "#6666FF",
+    "id": 21,
+    "prettyName": "Clan Cloud Cobra"
+  },
+  "ClanCoyote": {
+    "capital": "Kirin",
+    "colour": "#996666",
+    "id": 35,
+    "prettyName": "Clan Coyote"
+  },
+  "ClanDiamondShark": {
+    "capital": "Itabaiana",
+    "colour": "#00CCFF",
+    "id": 30,
+    "prettyName": "Clan Diamond Shark"
+  },
+  "ClanFireMandrill": {
+    "capital": "",
+    "colour": "#FFCCCC",
+    "id": 43,
+    "prettyName": "Clan Fire Mandrill"
+  },
+  "ClanGhostBear": {
+    "capital": "",
+    "colour": "#CCFFFF",
+    "id": 19,
+    "prettyName": "Clan Ghost Bear"
+  },
+  "ClanGoliathScorpion": {
+    "capital": "",
+    "colour": "#333300",
+    "id": 29,
+    "prettyName": "Clan Goliath Scorpion"
+  },
+  "ClanHellsHorses": {
+    "capital": "Csesztreg",
+    "colour": "#660000",
+    "id": 32,
+    "prettyName": "Clan Hells Horses"
+  },
+  "ClanIceHellion": {
+    "capital": "",
+    "colour": "#CCCCFF",
+    "id": 38,
+    "prettyName": "Clan Ice Hellion"
+  },
+  "ClanJadeFalcon": {
+    "capital": "Sudeten",
+    "colour": "#99CC33",
+    "id": 36,
+    "prettyName": "Clan Jade Falcon"
+  },
+  "ClanNovaCat": {
+    "capital": "Irece",
+    "colour": "#000099",
+    "id": 22,
+    "prettyName": "Clan Nova Cat"
+  },
+  "ClanSmokeJaguar": {
+    "capital": "",
+    "colour": "#666699",
+    "id": 20,
+    "prettyName": "Clan Smoke Jaguar"
+  },
+  "ClanSnowRaven": {
+    "capital": "",
+    "colour": "#669999",
+    "id": 27,
+    "prettyName": "Clan Snow Raven"
+  },
+  "ClanStarAdder": {
+    "capital": "Sheridan (Clan)",
+    "colour": "#0000FF",
+    "id": 44,
+    "prettyName": "Clan Star Adder"
+  },
+  "ClanSteelViper": {
+    "capital": "",
+    "colour": "#00FF66",
+    "id": 37,
+    "prettyName": "Clan Steel Viper"
+  },
+  "ClanStoneLion": {
+    "capital": "Tokasha",
+    "colour": "#FAA810",
+    "id": 66,
+    "prettyName": "Clan Stone Lion"
+  },
+  "ClanWolf": {
+    "capital": "Tamar",
+    "colour": "#993300",
+    "id": 42,
+    "prettyName": "Clan Wolf"
+  },
+  "ClanWolfInExile": {
+    "capital": "Arc-Royal",
+    "colour": "#993300",
+    "id": 68,
+    "prettyName": "Clan Wolf-in-Exile"
+  },
+  "ClansGeneric": {
+    "capital": "Strana Mechty",
+    "colour": "#CCCC99",
+    "id": 45,
+    "prettyName": "The Clans"
+  },
+  "ComStar": {
+    "capital": "Epsilon Pegasus (Columbus)",
+    "colour": "#999999",
+    "id": 33,
+    "prettyName": "ComStar"
+  },
+  "DarkCaste": {
+    "capital": "",
+    "colour": "#FFFF00",
+    "id": 54,
+    "prettyName": "Dark Caste"
+  },
+  "Davion": {
+    "capital": "New Avalon",
+    "colour": "#FFFF00",
+    "id": 5,
+    "prettyName": "Federated Suns"
+  },
+  "Delphi": {
+    "capital": "New Delphi",
+    "colour": "#FF6600",
+    "id": 16,
+    "prettyName": "New Delphi Compact"
+  },
+  "DuchyOfAndurien": {
+    "capital": "Andurien",
+    "colour": "#617274",
+    "id": 60,
+    "prettyName": "Duchy Of Andurien"
+  },
+  "Elysia": {
+    "capital": "Blackbone (Nyserta 3025+)",
+    "colour": "#9933CC",
+    "id": 23,
+    "prettyName": "Elysian Fields"
+  },
+  "EscorpionImperio": {
+    "capital": "Granada",
+    "colour": "#333300",
+    "id": 67,
+    "prettyName": "Escorpi\u00f3n Imperio"
+  },
+  "FiltveltCoalition": {
+    "capital": "Filtvelt",
+    "colour": "#D0C042",
+    "id": 62,
+    "prettyName": "Filtvelt Coalition"
+  },
+  "FroncReaches": {
+    "capital": "Fronc",
+    "colour": "#7A6D5E",
+    "id": 64,
+    "prettyName": "Fronc Reaches"
+  },
+  "GhostBearDominion": {
+    "capital": "Rasalhague",
+    "colour": "#CCFFFF",
+    "id": 57,
+    "prettyName": "Ghost Bear Dominion"
+  },
+  "GreenGhosts": {
+    "capital": "",
+    "colour": "#FFFFFF",
+    "id": 69,
+    "prettyName": "Green Ghosts"
+  },
+  "Hanse": {
+    "capital": "Bremen (HL)",
+    "colour": "#CCCC33",
+    "id": 17,
+    "prettyName": "Hanseatic League"
+  },
+  "Illyrian": {
+    "capital": "Illyria",
+    "colour": "#00CC00",
+    "id": 40,
+    "prettyName": "Illyrian Palatinate"
+  },
+  "Ives": {
+    "capital": "",
+    "colour": "#FF9900",
+    "id": 15,
+    "prettyName": "St. Ives Compact"
+  },
+  "JarnFolk": {
+    "capital": "Trondheim (JF)",
+    "colour": "#FF9933",
+    "id": 10,
+    "prettyName": "J\u00e0rnF\u00f2lk"
+  },
+  "Kurita": {
+    "capital": "Luthien",
+    "colour": "#CC0033",
+    "id": 3,
+    "prettyName": "Draconis Combine"
+  },
+  "Liao": {
+    "capital": "Sian",
+    "colour": "#009900",
+    "id": 11,
+    "prettyName": "Capellan Confederation"
+  },
+  "Locals": {
+    "capital": "",
+    "colour": "#330000",
+    "id": 6,
+    "prettyName": "Independent"
+  },
+  "Lothian": {
+    "capital": "Lothario",
+    "colour": "#009933",
+    "id": 41,
+    "prettyName": "Lothian League"
+  },
+  "MagistracyOfCanopus": {
+    "capital": "Canopus",
+    "colour": "#006666",
+    "id": 8,
+    "prettyName": "Magistracy Of Canopus"
+  },
+  "Marian": {
+    "capital": "Alphard (MH)",
+    "colour": "#CC9933",
+    "id": 7,
+    "prettyName": "Marian Hegemony"
+  },
+  "Marik": {
+    "capital": "",
+    "colour": "#CC99FF",
+    "id": 2,
+    "prettyName": "Free Worlds League"
+  },
+  "MarikStewart": {
+    "capital": "Marik",
+    "colour": "#CC99FF",
+    "id": 55,
+    "prettyName": "Marik-Stewart Commonwealth"
+  },
+  "NoFaction": {
+    "capital": "",
+    "colour": "#333333",
+    "id": 1,
+    "prettyName": "No Faction"
+  },
+  "Oberon": {
+    "capital": "Oberon",
+    "colour": "#666600",
+    "id": 24,
+    "prettyName": "Oberon Confederation"
+  },
+  "OrienteProtectorate": {
+    "capital": "Oriente",
+    "colour": "#A55EA6",
+    "id": 61,
+    "prettyName": "Oriente Protectorate"
+  },
+  "Outworld": {
+    "capital": "",
+    "colour": "#FF3300",
+    "id": 12,
+    "prettyName": "Outworlds Alliance"
+  },
+  "Rasalhague": {
+    "capital": "",
+    "colour": "#00CCCC",
+    "id": 13,
+    "prettyName": "Free Rasalhague Republic"
+  },
+  "RavenAlliance": {
+    "capital": "Alpheratz",
+    "colour": "#669999",
+    "id": 59,
+    "prettyName": "Raven Alliance"
+  },
+  "RegulanFiefs": {
+    "capital": "Regulus",
+    "colour": "#9E3C93",
+    "id": 56,
+    "prettyName": "Regulan Fiefs"
+  },
+  "Republic": {
+    "capital": "Terra",
+    "colour": "#FFCC33",
+    "id": 47,
+    "prettyName": "Republic of the Sphere"
+  },
+  "Rim": {
+    "capital": "Gillfillan\u0027s Gold",
+    "colour": "#5D8593",
+    "id": 53,
+    "prettyName": "Rim Collection"
+  },
+  "RimCommonality": {
+    "capital": "Lesnovo",
+    "colour": "#CE7577",
+    "id": 63,
+    "prettyName": "Rim Commonality"
+  },
+  "Society": {
+    "capital": "",
+    "colour": "#CC33CC",
+    "id": 46,
+    "prettyName": "The Society"
+  },
+  "Solaris7": {
+    "capital": "",
+    "colour": "#FF9933",
+    "id": 48,
+    "prettyName": "Solaris VII"
+  },
+  "Steiner": {
+    "capital": "Tharkad",
+    "colour": "#3366CC",
+    "id": 4,
+    "prettyName": "Lyran Commonwealth"
+  },
+  "TamarindAbbey": {
+    "capital": "Tamarind",
+    "colour": "#9E3C93",
+    "id": 58,
+    "prettyName": "Duchy of Tamarind-Abbey"
+  },
+  "TaurianConcordat": {
+    "capital": "Taurus",
+    "colour": "#6699FF",
+    "id": 14,
+    "prettyName": "Taurian Concordat"
+  },
+  "Tortuga": {
+    "capital": "Tortuga Prime",
+    "colour": "#CC6666",
+    "id": 34,
+    "prettyName": "Tortuga Dominions"
+  },
+  "Valkyrate": {
+    "capital": "Gotterdammerung",
+    "colour": "#996633",
+    "id": 25,
+    "prettyName": "Greater Valkyrate"
+  },
+  "WordOfBlake": {
+    "capital": "",
+    "colour": "#660099",
+    "id": 31,
+    "prettyName": "Word Of Blake"
+  }
+}

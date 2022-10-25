@@ -1,0 +1,31 @@
+﻿<Window x:Class="RtoTools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RtoTools" 
+        xmlns:view="clr-namespace:RtoTools.View"        
+        mc:Ignorable="d"
+        Title="RTO Tools" MinHeight="450" MinWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <view:TopRibbonView Grid.Row="0" DataContext="{Binding Ribbon}" />
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="{Binding TextMap, FallbackValue='Map'}">
+                <view:MapTabView DataContext="{Binding MapTab}"/>
+            </TabItem>
+            <TabItem Header="{Binding TextContracts, FallbackValue='Contracts'}">
+                <view:ContractsTabView DataContext="{Binding ContractsTab}" />
+            </TabItem>
+            <!-- v2 tab, recent activity -->
+            <TabItem Header="{Binding TextDebug, FallbackValue='Debug'}">
+                <view:DebugTabView DataContext="{Binding DebugTab}" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

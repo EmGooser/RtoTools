@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="RtoTools.View.MapTab.SystemDetailView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RtoTools.View.MapTab"
+             mc:Ignorable="d" 
+             d:DesignWidth="300">
+    <Border Background="#BBFFFFFF">
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="System Labels" Margin="0,0,5,0" VerticalAlignment="Center" />
+                <ComboBox Grid.Row="0" Grid.Column="1" DisplayMemberPath="Display" SelectedValuePath="Value"
+                          ItemsSource="{Binding SystemLabelOptions}" SelectedValue="{Binding SelectedSystemLabel}" />
+            </Grid>
+            <Grid Grid.Row="1" Visibility="{Binding ShowDetails, Converter={StaticResource BoolToVisibility}, FallbackValue='Visible'}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" Grid.ColumnSpan="2" BorderThickness="0,1,0,0" BorderBrush="Black" Margin="0,2" />
+
+                <StackPanel Grid.Row="1" Grid.Column="0">
+                    <TextBlock Text="{Binding TextSystemName, FallbackValue='System Name'}" />
+                    <TextBlock Text="{Binding TextCurrentOwner, FallbackValue='Current Owner'}" />
+                    <TextBlock Text="{Binding TextOwnerControl, FallbackValue='Owner Control'}" />
+                    <TextBlock Text="{Binding TextProvidedSupport, FallbackValue='Provided Support'}" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1">
+                    <TextBlock Text="{Binding SystemName, FallbackValue='SYSTEM NAME'}" />
+                    <TextBlock Text="{Binding CurrentOwner, FallbackValue='FACTION'}" />
+                    <TextBlock Text="{Binding OwnerControl, FallbackValue='-100%'}" />
+                    <TextBlock Text="{Binding ProvidedSupport, FallbackValue='-1'}" />
+                </StackPanel>
+
+                <Border Grid.Row="2" Grid.ColumnSpan="2" BorderThickness="0,1,0,0" BorderBrush="Black" Margin="0,2" />
+                <TextBlock Grid.Row="3" Grid.ColumnSpan="2" Text="{Binding TextOtherFactionControl, FallbackValue='Other Faction Control'}" />
+
+                <ItemsControl Grid.Row="4" Grid.ColumnSpan="2" ItemsSource="{Binding OtherFactionControlItems}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding }" />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

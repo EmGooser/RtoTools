@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:converter="clr-namespace:RtoTools.View.Converters">
+    <converter:BoolToVisibilityConverter x:Key="BoolToVisibility" />
+    <converter:BoolToDoubleConverter x:Key="BoolToRotate90" OnFalse="0" OnTrue="90" />
+    <converter:NullToVisibilityConverter x:Key="NullToVisibility" />
+    <converter:ColorToSolidBrushConverter x:Key="ColorToSolidBrush" />
+</ResourceDictionary>

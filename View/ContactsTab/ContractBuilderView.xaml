@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="RtoTools.View.ContactsTab.ContractBuilderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RtoTools.View.ContactsTab"
+             mc:Ignorable="d" 
+             d:DesignWidth="800"
+             Background="White">
+    <StackPanel>
+        <Grid>
+            <!-- make a clear button style for this control -->
+            <Button HorizontalAlignment="Left" Command="{Binding }" CommandParameter="ToggleContractBuilderExpanded" Style="{StaticResource ButtonTransparent}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE761;" Margin="5" VerticalAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <RotateTransform Angle="{Binding IsContractBuilderExpanded, Converter={StaticResource BoolToRotate90}, FallbackValue='90'}" CenterX="6" CenterY="6"  />
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock Text="{Binding TextContractBuilder, FallbackValue='Contract Builder'}" Margin="5" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button Margin="5" Padding="5,0" Content="{Binding TextLoadFile, FallbackValue='Load File'}"
+                        Command="{Binding }" CommandParameter="LoadFile" />
+                <Button Margin="5" Padding="5,0" Content="{Binding TextSaveFile, FallbackValue='Save File'}"
+                        Command="{Binding }" CommandParameter="SaveFile" />
+            </StackPanel>
+        </Grid>
+
+        <StackPanel Visibility="{Binding IsContractBuilderExpanded, Converter={StaticResource BoolToVisibility}, FallbackValue='Visible'}" Margin="5">
+            <ItemsControl ItemsSource="{Binding ContractBuilderList}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <local:ContractBuilderItemView />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

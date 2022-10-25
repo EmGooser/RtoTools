@@ -1,0 +1,129 @@
+﻿<UserControl x:Class="RtoTools.View.ContactsTab.ContractBuilderItemView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RtoTools.View.ContactsTab"
+             mc:Ignorable="d" 
+             Background="White"
+             d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="4*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="{Binding TextContractType, FallbackValue='Type'}" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+        <ComboBox Grid.Row="1" Grid.Column="0" Margin="5" SelectedValuePath="Value" DisplayMemberPath="Display"
+                  ItemsSource="{Binding ContractTypeOptions}" SelectedValue="{Binding SelectedContractType}" />
+
+        <!-- Attack -->
+        <Grid Grid.RowSpan="2" Grid.Column="2" Visibility="{Binding IsAttack, Converter={StaticResource BoolToVisibility}, FallbackValue='Collapsed'}">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="{Binding TextTargetSystem, FallbackValue='Target System'}" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="0" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding TargetSystemOptions}" SelectedValue="{Binding SelectedTargetSystem}" />
+
+            <TextBlock Text="{Binding TextTargetFaction, FallbackValue='Target Faction'}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="1" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding TargetFactionOptions}" SelectedValue="{Binding SelectedTargetFaction}" />
+        </Grid>
+
+        <!-- Fortify -->
+        <Grid Grid.RowSpan="2" Grid.Column="2" Visibility="{Binding IsFortify, Converter={StaticResource BoolToVisibility}, FallbackValue='Collapsed'}">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="{Binding TextTargetSystem, FallbackValue='Target System'}" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="0" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding TargetSystemOptions}" SelectedValue="{Binding SelectedTargetSystem}" />
+
+            <TextBlock Text="{Binding TextTargetControl, FallbackValue='TargetControl (100-500)'}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="5" Text="{Binding TargetControl}" />
+        </Grid>
+
+        <!-- FalseFlag -->
+        <Grid Grid.RowSpan="2" Grid.Column="2" Visibility="{Binding IsFalseFlag, Converter={StaticResource BoolToVisibility}, FallbackValue='Visible'}">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="{Binding TextAsFaction, FallbackValue='As Faction'}" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="0" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding AsFactionOptions}" SelectedValue="{Binding SelectedAsFaction}" />
+
+            <TextBlock Text="{Binding TextTargetSystem, FallbackValue='Target System'}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="1" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding TargetSystemOptions}" SelectedValue="{Binding SelectedTargetSystem}" />
+
+            <TextBlock Text="{Binding TextTargetFaction, FallbackValue='Target Faction'}" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="2" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding TargetFactionOptions}" SelectedValue="{Binding SelectedTargetFaction}" />
+        </Grid>
+
+        <!-- DeniableAsset -->
+        <Grid Grid.RowSpan="2" Grid.Column="2" Visibility="{Binding IsDeniableAsset, Converter={StaticResource BoolToVisibility}, FallbackValue='Collapsed'}">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="{Binding TextAsFaction, FallbackValue='As Faction'}" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="0" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding AsFactionOptions}" SelectedValue="{Binding SelectedAsFaction}" />
+
+            <TextBlock Text="{Binding TextTargetSystem, FallbackValue='Target System'}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="1" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding TargetSystemOptions}" SelectedValue="{Binding SelectedTargetSystem}" />
+
+            <TextBlock Text="{Binding TextTargetFaction, FallbackValue='Target Faction'}" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" Margin="5" />
+            <ComboBox Grid.Row="1" Grid.Column="2" Margin="5" IsEditable="True" DisplayMemberPath="Display" SelectedValuePath="Value"
+                      ItemsSource="{Binding TargetFactionOptions}" SelectedValue="{Binding SelectedTargetFaction}" />
+        </Grid>
+
+        <!-- Info display -->
+        <TextBlock Text="{Binding TextInfo, FallbackValue='Info: Sample'}" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5"
+                   Visibility="{Binding TextInfo, Converter={StaticResource NullToVisibility}, FallbackValue='Visible'}" />
+
+        <!-- Error display -->
+        <TextBlock Text="{Binding TextError, FallbackValue='Error: Sample'}" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Center" Margin="5"
+                   Visibility="{Binding TextError, Converter={StaticResource NullToVisibility}, FallbackValue='Visible'}"
+                   Foreground="Red" />
+    </Grid>
+</UserControl>
